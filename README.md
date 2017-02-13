@@ -1,7 +1,7 @@
 # SoftwareDevProject3308
 This is an semester-long project for Software Development class at CU Boulder
 
-**Team Members:** Sheila Doherty - irishsheila
+**Team Members:** Sheila Doherty - irishsheila, Rafael Espinoza - rambon99, Justin Bryan -justinhxc, dara1429, Madison Razook - 
 
 **Title:** TBD
 
