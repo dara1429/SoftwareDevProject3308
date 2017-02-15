@@ -17,7 +17,7 @@ This is an semester-long project for Software Development class at CU Boulder
 
 **Stories:**
 
-1. As a [role], I want to [do X] so that I can [benefit with Y].
+1. As a player, I want to use my own devices music so that I can enjoy the game to its fullest.
 
 2. As a [role], I want to [do X] so that I can [benefit with Y].
 
