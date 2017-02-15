@@ -31,7 +31,7 @@ This is an semester-long project for Software Development class at CU Boulder
 
 **Methodology:** I would say agile might be best. other teammates edit also
 
-**Project Tracking Software:** TBD
+**Project Tracking Software:** Trello - https://trello.com/ccs3308squad
 
 **Project Plan:** TBD
 
