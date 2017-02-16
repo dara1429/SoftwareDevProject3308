@@ -23,7 +23,7 @@ This is an semester-long project for Software Development class at CU Boulder
 
 3. As a player, I want to experience visual feedback when playing so i can see how well i am doing.
 
-4. As a [role], I want to [do X] so that I can [benefit with Y].
+4. As a player, I want to tap/press notes corresponding to the music so that i can feel the rythum while playing.
 
 5. As a [role], I want to [do X] so that I can [benefit with Y].
 
