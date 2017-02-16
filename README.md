@@ -11,17 +11,17 @@ This is an semester-long project for Software Development class at CU Boulder
 
 **Motivation:** Have fun and have new experience coding something different.
 
-**Risks:** Unfamiliar with language. Not sure if we will do pc version or mobile version.
+**Risks:** Unfamiliar with language. Not sure if we will do pc version or mobile version. If we use Unity it might take awhile to learn before we can impliment anything.
 
-**Mitigation strategy for dealing with the risk:** spread the work evenly so no one is overwhelmed and work together so no one feels alone.
+**Mitigation strategy for dealing with the risk:** spread the work evenly so no one is overwhelmed and work together so no one feels alone. Start small with a simple mp3 so we can work on getting the syncronization between notes we need to hit and the song.
 
 **Stories:**
 
-1. As a player, I want to use my own devices music so that I can enjoy the game to its fullest.
+1. As a player, I want to use my own devices music so that I can enjoy the game to its fullest. (later goal)
 
-2. As a [role], I want to [do X] so that I can [benefit with Y].
+2. As a player, I want to have separate difficulties so i can enjoy the game at my own skill level.
 
-3. As a [role], I want to [do X] so that I can [benefit with Y].
+3. As a player, I want to experience visual feedback when playing so i can see how well i am doing.
 
 4. As a [role], I want to [do X] so that I can [benefit with Y].
 
