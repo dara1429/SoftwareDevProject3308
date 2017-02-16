@@ -5,15 +5,15 @@ This is an semester-long project for Software Development class at CU Boulder
 
 **Title:** Rhythmic Color - working title
 
-**Description:** a simple rhythm game that will be timing button similar to other rhythm games.
+**Description:** A simple musical rhythm game that will be use timing button (similar to other rhythm games).
 
-**Vision Statement:** Fun, challenging, and colorful game to enjoy your own music.
+**Vision Statement:** Fun, quick, challenging and colorful game to enjoy your own music.
 
-**Motivation:** Have fun and have new experience coding something different.
+**Motivation:** A fun project that our team will enjoy working on and help us to explore and develop new coding skills.
 
-**Risks:** Unfamiliar with language. Not sure if we will do pc version or mobile version. If we use Unity it might take awhile to learn before we can impliment anything.
+**Risks:** Unfamiliar with language. Not sure if we will do pc version or mobile version. If we use Unity it might take awhile to learn before we can impliment anything. Teammates have very different course schedules, so meeting up to work together is a challenge. 
 
-**Mitigation strategy for dealing with the risk:** spread the work evenly so no one is overwhelmed and work together so no one feels alone. Start small with a simple mp3 so we can work on getting the syncronization between notes we need to hit and the song.
+**Mitigation strategy for dealing with the risk:** Apread the work evenly so no one is overwhelmed and work together so no one feels alone. Start small with a simple mp3 so we can work on getting the syncronization between notes we need to hit and the song. Assign research task for learning new material. Utilize Slack and Skye for team communication when in-person meetings are not possible.
 
 **Stories:**
 (Story Points used for requirement size)
@@ -30,9 +30,11 @@ This is an semester-long project for Software Development class at CU Boulder
 
 6. As a player, I want to play a bug-free game so that I can enjoy the game to its fullest. (50tps)
 
-**Methodology:** I would say agile might be best. other teammates edit also
+**Methodology:** Agile. Split the project into small steps so at each deadline we have a completed project.
 
 **Project Tracking Software:** Trello - https://trello.com/ccs3308squad
 
-**Project Plan:** TBD
+**Project Plan:** 
+
+(https://trello.com/b/ehobb52i/game-features)
 
