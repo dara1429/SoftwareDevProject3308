@@ -1,7 +1,7 @@
 # SoftwareDevProject3308
 This is an semester-long project for Software Development class at CU Boulder
 
-**Team Members:** Sheila Doherty - irishsheila, Rafael Espinoza - rambon99, Justin Bryan - justinhxc, Daniel Rapacchietta - dara1429, Madison Razook - ???
+**Team Members:** Sheila Doherty - irishsheila, Rafael Espinoza - rambon99, Justin Bryan - justinhxc, Daniel Rapacchietta - dara1429, Madison Razook - mara5374
 
 **Title:** Rhythmic Color - working title
 
@@ -25,9 +25,9 @@ This is an semester-long project for Software Development class at CU Boulder
 
 4. As a player, I want to tap/press notes corresponding to the music so that i can feel the rythum while playing.
 
-5. As a [role], I want to [do X] so that I can [benefit with Y].
+5. As a player, I want to have engaging visuals so that the game will be more enjoyable to play.
 
-6. As a [role], I want to [do X] so that I can [benefit with Y].
+6. As a player, I want to play a bug-free game so that I can enjoy the game to its fullest.
 
 **Methodology:** I would say agile might be best. other teammates edit also
 
