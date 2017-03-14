@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FFBCD9CA-414D-633B-F2DB-83BE25C62778}</ProjectGuid>
+    <ProjectGuid>{680C635F-8722-DDFE-74E4-382EC4B72C8E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-UnityScript</AssemblyName>
@@ -50,6 +50,9 @@
      <Compile Include="Assets\Note.js" />
      <Compile Include="Assets\Play_Song.js" />
      <Compile Include="Assets\Song_End.js" />
+     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
+     <None Include="Assets\UI Sampler\Textures and Sprites\SF UI\Background\LICENSE.txt" />
+     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
      <None Include="Assets\Music\example.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
