@@ -47,17 +47,10 @@ function playChart()
     	line = chart.ReadLine();
     }
     chart.Close();
-    songEnd();
-    return;
-}
-
-function songEnd()
-{
-	yield WaitForSeconds(3);
-	Application.LoadLevel("MainMenu");
-}
 
     //Instantiate(note1_object, transform.position + Vector3(-1.5,4.50,0), Quaternion.Euler(0,0,0));
     //Instantiate(note2_object, transform.position + Vector3(-0.5,4.50,0), Quaternion.Euler(0,0,0));
     //Instantiate(note3_object, transform.position + Vector3(0.5,4.50,0), Quaternion.Euler(0,0,0));
     //Instantiate(note4_object, transform.position + Vector3(1.5,4.50,0), Quaternion.Euler(0,0,0));
+    return;
+}
