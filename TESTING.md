@@ -8,3 +8,7 @@ Automated Tests: Explanation and screenshot (see above)
 
 User Acceptance Tests: Copy of at least three UAT plans
 
+![alt tag](https://github.com/irishsheila/SoftwareDevProject3308/blob/master/UATest1.png)
+
+
+
