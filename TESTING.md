@@ -4,7 +4,7 @@
 
 **Vision:** Fun, quick, challenging and colorful game to enjoy your own music.
 
-**Automated Tests:** 
+**Automated Tests:** We used Unity Testing Tool (https://www.assetstore.unity3d.com/en/#!/content/13802) for our automated testing.
 
 **User Acceptance Tests:** *Copy of at least three UAT plans*
 
