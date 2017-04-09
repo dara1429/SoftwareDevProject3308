@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MainMenu.unity
+- path: Assets/Create Chart.unity
   isLoaded: 1
   isActive: 1
