@@ -10,10 +10,9 @@ var songTime : int = 0;
 function Start () {
 //Start Song
   var song : AudioSource = GetComponent.<AudioSource>(); 
-  song.PlayDelayed(2.0);
+  song.PlayDelayed(1.7);
   playChart();
   return;
-
 }
 
 function playChart()
@@ -22,7 +21,7 @@ function playChart()
     var note2 = "0100";
     var note3 = "0010";
     var note4 = "0001";
-    var chart = new File.OpenText("Assets/Music/example.txt");
+    var chart = new File.OpenText("Assets/Music/old_example.txt");
     var line = "";
     line = chart.ReadLine();
     while (line != null)
@@ -43,7 +42,7 @@ function playChart()
     	{
     	  Instantiate(note4_object, transform.position + Vector3(1.5,4.50,0), Quaternion.Euler(0,0,0));
     	}
-    	yield WaitForSeconds(.0625);
+    	yield WaitForSecondsRealtime(.0625);
     	line = chart.ReadLine();
     }
     chart.Close();
@@ -53,10 +52,10 @@ function playChart()
 
 function songEnd()
 {
-yield WaitForSeconds(3);
-Application.LoadLevel("MainMenu");
+	yield WaitForSeconds(3);
+	SceneManagement.SceneManager.LoadScene("MainMenu");
 }
-//Instantiate(note1_object, transform.position + Vector3(-1.5,4.50,0), Quaternion.Euler(0,0,0));
+	//Instantiate(note1_object, transform.position + Vector3(-1.5,4.50,0), Quaternion.Euler(0,0,0));
     //Instantiate(note2_object, transform.position + Vector3(-0.5,4.50,0), Quaternion.Euler(0,0,0));
     //Instantiate(note3_object, transform.position + Vector3(0.5,4.50,0), Quaternion.Euler(0,0,0));
     //Instantiate(note4_object, transform.position + Vector3(1.5,4.50,0), Quaternion.Euler(0,0,0));
