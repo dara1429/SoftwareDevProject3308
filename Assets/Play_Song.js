@@ -5,6 +5,7 @@ var note1_object : GameObject;
 var note2_object : GameObject;
 var note3_object : GameObject;
 var note4_object : GameObject;
+
 var songTime : int = 0;
 
 function Start () {
@@ -55,7 +56,3 @@ function songEnd()
 	yield WaitForSeconds(3);
 	SceneManagement.SceneManager.LoadScene("MainMenu");
 }
-	//Instantiate(note1_object, transform.position + Vector3(-1.5,4.50,0), Quaternion.Euler(0,0,0));
-    //Instantiate(note2_object, transform.position + Vector3(-0.5,4.50,0), Quaternion.Euler(0,0,0));
-    //Instantiate(note3_object, transform.position + Vector3(0.5,4.50,0), Quaternion.Euler(0,0,0));
-    //Instantiate(note4_object, transform.position + Vector3(1.5,4.50,0), Quaternion.Euler(0,0,0));
