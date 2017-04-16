@@ -6,14 +6,15 @@ private var paused: boolean = false;
 
 function Update(){
     //Looks for Input P to toggle pause, pausing when unpaused and unpaussing when paused
-    var song : AudioSource = GetComponent.<AudioSource>();
+
+    var song : AudioSource = GetComponent.<AudioSource>(); 
     if (Input.GetKeyDown(KeyCode.P)){
         if (paused){
             Time.timeScale = 1;
             paused = false;
         }
         else {
-            song.Pause();
+        	song.Pause();
             Time.timeScale = 0;
             paused = true;
         }

@@ -3,8 +3,13 @@
 //exists within the hitbox of the area where they need to hit it.
 var whatButton: int = 1;
 var object : Transform;
+private var currentScore : Score;
 
 function Start () {
+
+	var scoreObj : GameObject = GameObject.Find("Camera");
+	currentScore = scoreObj.GetComponent(Score);
+
 	if (whatButton == 1) {
 		object = GameObject.Find("note1pressed").transform;
 	}
@@ -21,15 +26,15 @@ function Start () {
 
 function Update () {
 
+
 	if (Input.GetButtonDown ("1"))
 	{
 	if ( whatButton == 1 )
 	{
-	    //If note1 and note1 pressed collide. Count as hit.
 		if (transform.position.y <= object.position.y)
 		{
-		Destroy(gameObject);
-		//Main.score = Main.score + 1;
+			Destroy(gameObject);
+			currentScore.AddScore();
 		}
 	}
 	}
@@ -39,8 +44,8 @@ function Update () {
 	{
 		if (transform.position.y <= object.position.y)
 		{
-		Destroy(gameObject);
-		//Main.score = Main.score + 1;
+			Destroy(gameObject);
+			currentScore.AddScore();
 		}
 	}
 	}	
@@ -50,8 +55,8 @@ function Update () {
 	{
 		if (transform.position.y <= object.position.y)
 		{
-		Destroy(gameObject);
-		//Main.score = Main.score + 1;
+			Destroy(gameObject);
+			currentScore.AddScore();
 		}
 	}
 	}	
@@ -61,10 +66,12 @@ function Update () {
 	{
 		if (transform.position.y <= object.position.y)
 		{
-		Destroy(gameObject);
-		//Main.score = Main.score + 1;
+			Destroy(gameObject);
+			currentScore.AddScore();
 		}
 	}
 	}
 
 }
+
+
