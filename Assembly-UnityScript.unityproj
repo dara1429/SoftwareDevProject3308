@@ -49,9 +49,10 @@
      <Compile Include="Assets\Button.js" />
      <Compile Include="Assets\Create_Chart.js" />
      <Compile Include="Assets\IsPressed.js" />
+     <Compile Include="Assets\Music\example.js" />
+     <Compile Include="Assets\Music\old_example.js" />
      <Compile Include="Assets\Note.js" />
      <Compile Include="Assets\Pause Menu.js" />
-     <Compile Include="Assets\Play_Song.js" />
      <Compile Include="Assets\Score.js" />
      <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
      <None Include="Assets\UI Sampler\Textures and Sprites\SF UI\Background\LICENSE.txt" />

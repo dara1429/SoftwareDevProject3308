@@ -15,9 +15,9 @@ function Start () {
 	if (File.Exists("Assets/Music/example.txt"))
 	{
 		//Display Error Message and exit to main menu if chart file already exists.
-		error = true;
-		Time.timeScale = 0;
-		song.Pause();
+		//error = true;
+		//Time.timeScale = 0;
+		//song.Pause();
 	}
 
 	//Get the length of the song and calculate the correct timing so that we can accurately make charts.
@@ -42,7 +42,6 @@ function createChart (timing : int)
 	var chart = new StreamWriter("Assets/Music/example.txt");
 	while(counter < timing)
 	{
-		Debug.Log(counter);
 		flag1 = counter - flag1;
 		flag2 = counter - flag2;
 		flag3 = counter - flag3;
