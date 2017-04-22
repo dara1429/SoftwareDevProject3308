@@ -18,3 +18,13 @@ function UpdateScore()
 {
 	scoreText.text = "Score: " + score;
 }
+
+function SubtractScore()
+{
+    if (score != 0)
+    {
+        score -=100;
+        UpdateScore();
+    }
+
+}
