@@ -31,44 +31,60 @@ function Update () {
 	{
 	if ( whatButton == 1 )
 	{
-		if (transform.position.y <= object.position.y)
+	    if (transform.position.y <= -3 && transform.position.y >= -4)
 		{
 			Destroy(gameObject);
 			currentScore.AddScore();
-		}
+	    }
+	    else 
+	    {
+	        currentScore.SubtractScore();
+	    }
 	}
 	}
 	if (Input.GetButtonDown ("2"))
 	{
 	if ( whatButton == 2 )
 	{
-		if (transform.position.y <= object.position.y)
+	    if (transform.position.y <= -3 && transform.position.y >= -4)
 		{
 			Destroy(gameObject);
 			currentScore.AddScore();
-		}
+	    }
+	    else 
+	    {
+	        currentScore.SubtractScore();
+	    }
 	}
 	}	
 	if (Input.GetButtonDown ("3"))
 	{
 	if ( whatButton == 3 )
 	{
-		if (transform.position.y <= object.position.y)
+	    if (transform.position.y <= -3 && transform.position.y >= -4)
 		{
 			Destroy(gameObject);
 			currentScore.AddScore();
-		}
+	    }
+	    else 
+	    {
+	        currentScore.SubtractScore();
+	    }
 	}
 	}	
 	if (Input.GetButtonDown ("4"))
 	{
 	if ( whatButton == 4 )
 	{
-		if (transform.position.y <= object.position.y)
+	    if (transform.position.y <= -3 && transform.position.y >= -4)
 		{
 			Destroy(gameObject);
 			currentScore.AddScore();
-		}
+	    }
+	    else 
+	    {
+	        currentScore.SubtractScore();
+	    }
 	}
 	}
 
