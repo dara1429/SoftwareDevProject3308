@@ -5,7 +5,6 @@ var pressed1 : Transform;
 var pressed2 : Transform;
 var pressed3 : Transform;
 var pressed4 : Transform;
-//Assigns all the pressed objects to variables
 function Start(){
     pressed1 = GameObject.Find("Pressed 1").transform;
     pressed2 = GameObject.Find("Pressed 2").transform;

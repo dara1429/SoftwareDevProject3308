@@ -5,6 +5,7 @@ var whatButton: int = 1;
 var object : Transform;
 private var currentScore : Score;
 
+//Looks for the note in the correct lane based on key input.
 function Start () {
 
 	var scoreObj : GameObject = GameObject.Find("Camera");
@@ -24,9 +25,8 @@ function Start () {
 	}
 }
 
+//Checks the position of the falling notes in relation to the hit area note.
 function Update () {
-
-
 	if (Input.GetButtonDown ("1"))
 	{
 	if ( whatButton == 1 )

@@ -7,11 +7,13 @@ var note3_object : GameObject;
 var note4_object : GameObject;
 
 var songTime : int = 0;
+private var songDelay : float = 1.7;
+private var noteDelay : float = .0625;
 
 function Start () {
-//Start Song
+//Start Song on a delay so that the notes sync up correctly. can be adjusted per song.
   var song : AudioSource = GetComponent.<AudioSource>(); 
-  song.PlayDelayed(1.7);
+  song.PlayDelayed(songDelay);
   playChart();
   return;
 }
@@ -43,7 +45,7 @@ function playChart()
     	{
     	  Instantiate(note4_object, transform.position + Vector3(1.5,4.50,0), Quaternion.Euler(0,0,0));
     	}
-    	yield WaitForSecondsRealtime(.0625);
+    	yield WaitForSecondsRealtime(noteDelay);
     	line = chart.ReadLine();
     }
     chart.Close();
@@ -53,6 +55,7 @@ function playChart()
 
 function songEnd()
 {
-	yield WaitForSeconds(3);
+	var waitseconds : int = 3;
+	yield WaitForSeconds(waitseconds);
 	SceneManagement.SceneManager.LoadScene("MainMenu");
 }

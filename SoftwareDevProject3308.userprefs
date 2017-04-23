@@ -2,9 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Create_Chart.js">
     <Files>
-      <File FileName="Assets\Create_Chart.js" Line="44" Column="3" />
+      <File FileName="Assets\Create_Chart.js" Line="73" Column="28" />
       <File FileName="Assets\Button.js" Line="1" Column="1" />
-      <File FileName="Assets\Music\example.js" Line="10" Column="1" />
+      <File FileName="Assets\IsPressed.js" Line="1" Column="1" />
+      <File FileName="Assets\Note.js" Line="1" Column="1" />
+      <File FileName="Assets\Pause Menu.js" Line="1" Column="1" />
+      <File FileName="Assets\Song_Select.cs" Line="1" Column="1" />
+      <File FileName="Assets\Score.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

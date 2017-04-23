@@ -1,9 +1,12 @@
 ﻿#pragma strict
 
+//This file keeps track of the score.
+
 var scoreText : UnityEngine.UI.Text;
 private var score : int;
 
-function Start () {
+function Start () 
+{
 	score = 0;
 	scoreText.text = "Score: " + score;
 }
@@ -21,7 +24,7 @@ function UpdateScore()
 
 function SubtractScore()
 {
-    if (score != 0)
+	if (score != 0)
     {
         score -=100;
         UpdateScore();

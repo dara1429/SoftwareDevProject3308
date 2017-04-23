@@ -66,6 +66,7 @@
      <None Include="Assets\Music\old_example.txt" />
      <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
      <None Include="Assets\Music\example.txt" />
+     <None Include="Assets\Music\customsong.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

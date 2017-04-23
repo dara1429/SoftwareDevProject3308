@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Song_Select : MonoBehaviour {
+// Loads in the correct scene (used in song select scene)
 
+public class Song_Select : MonoBehaviour 
+{
 	public void LoadbyName(string sceneName)
 	{
 		SceneManager.LoadScene (sceneName);
