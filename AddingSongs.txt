@@ -1,0 +1,38 @@
+1. Rename desired mp3 to customsong.mp3 and move it into the assets/music folder  (replacing the dummy mp3)
+2. Run the game in unity and go to create chart. the song should start playing and you can put down notes with 1,2,3,4.
+3. After the song ends wait for the game to go back to the menu. A new text file named customsong.txt should be in the
+assets/music folder.
+
+4. Rename both the customsong.mp3 and customsong.txt to your desired name. Make sure the two files named the same for consistency
+and clarity.
+
+5. Make a duplicate of example.js or old_example.js (in the assets/music folder) and rename it to the same name as your mp3 and 
+txt file. this is what will be attached to your scene in unity to play the song and read the txt file chart. Now edit the
+.js file you just made and change the two lines that point to the text file. They should point to your new txt file.
+
+6. In unity, duplicate one of the already existing game scenes (song(example) or song(example)). 
+
+7. Rename the duplicated scene to the name of your song, then edit the scene. Then click on the camera object in the scene hierarchy.
+
+8. In the inspector for the camera, change the audio source to read your mp3. Now delete the old song script that is attached
+and replace it with your new song script (.js) . Now the game scene will load the correct song and read in the correct
+txt file when the scene loads.
+
+---How to add to song select ---
+
+1. After testing the game scene and confirming everything works, save the scene and open up the song select scene.
+
+2. Navigate the heirarchy until you reach GridWithSongs. Under this should be the list of song select buttons. 
+
+3. Select one of the buttons that does not already have a song attached to it. For example, if you want to add a song to
+SongSelectButton(2). click on it and attach the Song_Select C# script from the assets folder. 
+
+4. Now click on the button(script) and click the plus button within the On Click () section. Where it says None (Object), click on it
+and set it to the SongSelectButton(2) script. In the dropdown menu next to the one that says runtime only, select "Song_Select.LoadbyName".
+
+5. Now underneath that, type in the EXACT name of the scene in unity that has your new song.
+
+Hint: Look at the songs already in place and their scenes to better understand.
+
+6. Finally, underneath the SongSelectButton(2) (for example), select Song, and you should be able to rename the button to display
+the name of your song.
