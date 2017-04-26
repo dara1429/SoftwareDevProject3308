@@ -1,13 +1,17 @@
 ﻿#pragma strict
 import System.IO;
+
+//This file will create a new chart (customsong.txt) file in Assets/Music/ 
+
 var note1_object : GameObject;
 var note2_object : GameObject;
 var note3_object : GameObject;
 var note4_object : GameObject;
 private var error: boolean = false;
-private var songDelay : float = .0625;
+private var timing : float = .0625;
 
-//This file will create a new chart (example.txt) file in Assets/Music/ 
+// Used to stop player from accidently putting down many of the same note with only 1 button press.
+private var noteDelay : float = .1;
 
 function Start () {
 
@@ -21,82 +25,64 @@ function Start () {
 		//song.Pause();
 	}
 
-	//Get the length of the song and calculate the correct timing so that we can accurately make charts.
-  	var time : int = Mathf.Round(song.clip.length);
-	var timing : int = time * 16;
-
 	if (error != true)
 	{
-		createChart(timing);
+		createChart(song);
 	}
 }
 
 
-function createChart (timing : int) 
+function createChart (song : AudioSource) 
 {
-	var counter : int = 0;
-	var flag1 : int = 0;
-	var flag2 : int = 0;
-	var flag3 : int = 0;
-	var flag4 : int = 0;
+	var time : int = Mathf.Round(song.clip.length);
+	var flag1 : float = 0;
+	var flag2 : float = 0;
+	var flag3 : float = 0;
+	var flag4 : float = 0;
 
 	var chart = new StreamWriter("Assets/Music/customsong.txt");
 
 	//We need to wait .0625 seconds so that only one line is written to the text (chart) file 
-	//every .0625 seconds. This is so we the chart syncs up when we play the song and read the 
-	//chart.
-	while(counter < timing)
-	{
-		flag1 = counter - flag1;
-		flag2 = counter - flag2;
-		flag3 = counter - flag3;
-		flag4 = counter - flag4;
+	//every .0625 seconds. This is so we the chart syncs up when we play the song and read the chart.
 
-		if (Input.GetKey ("1") && flag1 > 1)
+	while(song.time <= time)
+	{
+		flag1 = song.time - flag1;
+		flag2 = song.time - flag2;
+		flag3 = song.time - flag3;
+		flag4 = song.time - flag4;
+		if (Input.GetKey ("1") && flag1 > noteDelay)
 		{
 	 		chart.WriteLine("1000");
 	 		Instantiate(note1_object, transform.position + Vector3(-3,2.5,0), Quaternion.Euler(0,0,0));
-	 		flag1 = counter;
-	 		yield WaitForSecondsRealtime(songDelay);
-			counter = counter + 1;
+	 		flag1 = song.time;
+	 		yield WaitForSecondsRealtime(timing);
 		}
-		if (Input.GetKey ("2") && flag2 > 1)
+		if (Input.GetKey ("2") && flag2 > noteDelay)
 		{
 			chart.WriteLine("0100");
 			Instantiate(note2_object, transform.position + Vector3(-1,2.5,0), Quaternion.Euler(0,0,0));
-	 		flag2 = counter;
-	 		yield WaitForSecondsRealtime(songDelay);
-			counter = counter + 1;
+	 		flag2 = song.time;
+	 		yield WaitForSecondsRealtime(timing);
 		}	
-		if (Input.GetKey ("3") && flag3 > 1)
+		if (Input.GetKey ("3") && flag3 > noteDelay)
 		{
 			chart.WriteLine("0010");
 			Instantiate(note3_object, transform.position + Vector3(1,2.5,0), Quaternion.Euler(0,0,0));
-	 		flag3 = counter;
-	 		yield WaitForSecondsRealtime(songDelay);
-			counter = counter + 1;
+	 		flag3 = song.time;
+	 		yield WaitForSecondsRealtime(timing);
 		}	
-		if (Input.GetKey ("4") && flag4 > 1)
+		if (Input.GetKey ("4") && flag4 > noteDelay)
 		{
 			chart.WriteLine("0001");
 			Instantiate(note4_object, transform.position + Vector3(3,2.5,0), Quaternion.Euler(0,0,0));
-	 		flag4 = counter;
-	 		yield WaitForSecondsRealtime(songDelay);
-			counter = counter + 1;
+	 		flag4 = song.time;
+	 		yield WaitForSecondsRealtime(timing);
 		}
 		else
 		{
-			if (counter != 0)
-			{
 				chart.WriteLine("0000");
-				yield WaitForSecondsRealtime(songDelay);
-				counter = counter + 1;
-			}
-			else
-			{
-				yield WaitForSecondsRealtime(songDelay);
-				counter = counter + 1;
-			}
+				yield WaitForSecondsRealtime(timing);
 		}
 	}
 	chart.Close();
@@ -117,8 +103,11 @@ function OnBecameInvisible()
 
 function OnGUI()
 {
-	// Display error message and confirm box if chart file exists already. This is so
-	// we dont overwrite an already made chart.
+
+	var song : AudioSource = GetComponent.<AudioSource>(); 
+	var totalTime : int = Mathf.Round(song.clip.length);
+
+	// Display error message and confirm box if chart file exists already.
     if (error){
     	GUI.Box(new Rect(140,150,500,25), "Error, chart file already exists. Please move/rename/delete it before creating another.");
         if (GUI.Button (Rect(280,200,200,50), "Ok") )
@@ -126,4 +115,6 @@ function OnGUI()
            SceneManagement.SceneManager.LoadScene("MainMenu");
         }
     }
+
+    GUI.Label(new Rect(140,40,500,25), "Time : " + Mathf.Round(song.time) + " Sec /  " + totalTime + " Sec ");
 }
