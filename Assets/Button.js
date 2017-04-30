@@ -35,6 +35,7 @@ function Update () {
 		{
 			Destroy(gameObject);
 			currentScore.AddScore();
+			Stats.notesHit = Stats.notesHit + 1;
 	    }
 	    else 
 	    {
@@ -50,6 +51,7 @@ function Update () {
 		{
 			Destroy(gameObject);
 			currentScore.AddScore();
+			Stats.notesHit = Stats.notesHit + 1;
 	    }
 	    else 
 	    {
@@ -65,6 +67,7 @@ function Update () {
 		{
 			Destroy(gameObject);
 			currentScore.AddScore();
+			Stats.notesHit = Stats.notesHit + 1;
 	    }
 	    else 
 	    {
@@ -80,6 +83,7 @@ function Update () {
 		{
 			Destroy(gameObject);
 			currentScore.AddScore();
+			Stats.notesHit = Stats.notesHit + 1;
 	    }
 	    else 
 	    {

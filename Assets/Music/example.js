@@ -32,18 +32,22 @@ function playChart()
     	if (line == note1)
     	{
     	  Instantiate(note1_object, transform.position + Vector3(-1.5,4.50,0), Quaternion.Euler(0,0,0));
+    	  Stats.totalNotes = Stats.totalNotes + 1;
     	}
     	if (line == note2)
     	{
     	  Instantiate(note2_object, transform.position + Vector3(-0.5,4.50,0), Quaternion.Euler(0,0,0));
+    	  Stats.totalNotes = Stats.totalNotes + 1;
     	}
     	if (line == note3)
     	{
     	  Instantiate(note3_object, transform.position + Vector3(0.5,4.50,0), Quaternion.Euler(0,0,0));
+    	  Stats.totalNotes = Stats.totalNotes + 1;
     	}
     	if (line == note4)
     	{
     	  Instantiate(note4_object, transform.position + Vector3(1.5,4.50,0), Quaternion.Euler(0,0,0));
+    	  Stats.totalNotes = Stats.totalNotes + 1;
     	}
     	yield WaitForSecondsRealtime(noteDelay);
     	line = chart.ReadLine();
@@ -58,4 +62,5 @@ function songEnd()
 	var waitseconds : int = 3;
 	yield WaitForSeconds(waitseconds);
 	SceneManagement.SceneManager.LoadScene("MainMenu");
+	//SceneManagement.SceneManager.LoadScene("Results Screen");
 }

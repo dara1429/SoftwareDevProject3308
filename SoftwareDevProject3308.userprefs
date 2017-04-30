@@ -1,8 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Create_Chart.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Music\old_example.js">
     <Files>
-      <File FileName="Assets\Create_Chart.js" Line="110" Column="72" />
+      <File FileName="Assets\Music\old_example.js" Line="65" Column="32" />
+      <File FileName="Assets\Music\customsong.js" Line="50" Column="8" />
+      <File FileName="Assets\Music\example.js" Line="35" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
