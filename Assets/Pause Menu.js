@@ -41,7 +41,7 @@ function OnGUI()
         }
         if (GUI.Button (Rect(150,250,600,100), "Quit"))
         {
-            Application.LoadLevel("MainMenu");
+            SceneManagement.SceneManager.LoadScene("MainMenu");
         }
     }
 }
