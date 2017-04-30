@@ -39,10 +39,9 @@ function OnGUI()
         {
             paused= false;
         }
+        if (GUI.Button (Rect(150,250,600,100), "Quit"))
+        {
+            SceneManagement.SceneManager.LoadScene("MainMenu");
+        }
     }
 }
-
-//function Start(){
-  //  menuscreen = GameObject.Find("Pause Screen");
-  //  menuscreen.SetActive(false);
-//}
