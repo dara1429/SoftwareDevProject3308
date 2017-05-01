@@ -49,6 +49,7 @@
      <Compile Include="Assets\Button.js" />
      <Compile Include="Assets\Create_Chart.js" />
      <Compile Include="Assets\IsPressed.js" />
+     <Compile Include="Assets\Last Scene.js" />
      <Compile Include="Assets\Music\customsong.js" />
      <Compile Include="Assets\Music\example.js" />
      <Compile Include="Assets\Music\old_example.js" />

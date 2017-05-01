@@ -61,6 +61,5 @@ function songEnd()
 {
 	var waitseconds : int = 3;
 	yield WaitForSeconds(waitseconds);
-	SceneManagement.SceneManager.LoadScene("MainMenu");
-	//SceneManagement.SceneManager.LoadScene("Results Screen");
+	SceneManagement.SceneManager.LoadScene("Results Screen");
 }
