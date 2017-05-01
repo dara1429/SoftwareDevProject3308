@@ -19,7 +19,6 @@ function Start () {
 		percentage = Mathf.RoundToInt((hits / total) * 100);
 	}
 
-	percentage = 89;
 
 	if (percentage == 100) 
 	{
