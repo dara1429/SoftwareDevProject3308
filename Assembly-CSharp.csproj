@@ -61,11 +61,13 @@
      <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
      <Compile Include="Assets\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\Song_Select.cs" />
+     <Compile Include="Assets\colorShifter.cs" />
      <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
      <None Include="Assets\UI Sampler\Textures and Sprites\SF UI\Background\LICENSE.txt" />
      <None Include="Assets\Music\old_example.txt" />
      <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
      <None Include="Assets\Music\example.txt" />
+     <None Include="Assets\Music\breakfast.txt" />
      <None Include="Assets\Music\customsong.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

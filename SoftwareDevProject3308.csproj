@@ -95,6 +95,7 @@
   <ItemGroup>
     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
+    <None Include="Assets\Music\breakfast.txt" />
     <None Include="Assets\Music\customsong.txt" />
     <None Include="Assets\Music\example.txt" />
     <None Include="Assets\Music\old_example.txt" />
