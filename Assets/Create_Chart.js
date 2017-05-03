@@ -9,6 +9,10 @@ var note3_object : GameObject;
 var note4_object : GameObject;
 private var error: boolean = false;
 private var timing : float = .0625;
+private var greenNotes : int = 0;
+private var redNotes : int = 0;
+private var yellowNotes : int = 0;
+private var blueNotes : int = 0;
 
 // Used to stop player from accidently putting down many of the same note with only 1 button press.
 private var noteDelay : float = .1;
@@ -55,6 +59,7 @@ function createChart (song : AudioSource)
 		{
 	 		chart.WriteLine("1000");
 	 		Instantiate(note1_object, transform.position + Vector3(-3,2.5,0), Quaternion.Euler(0,0,0));
+	 		greenNotes += 1;
 	 		flag1 = song.time;
 	 		yield WaitForSecondsRealtime(timing);
 		}
@@ -62,6 +67,7 @@ function createChart (song : AudioSource)
 		{
 			chart.WriteLine("0100");
 			Instantiate(note2_object, transform.position + Vector3(-1,2.5,0), Quaternion.Euler(0,0,0));
+			redNotes += 1;
 	 		flag2 = song.time;
 	 		yield WaitForSecondsRealtime(timing);
 		}	
@@ -69,6 +75,7 @@ function createChart (song : AudioSource)
 		{
 			chart.WriteLine("0010");
 			Instantiate(note3_object, transform.position + Vector3(1,2.5,0), Quaternion.Euler(0,0,0));
+			yellowNotes += 1;
 	 		flag3 = song.time;
 	 		yield WaitForSecondsRealtime(timing);
 		}	
@@ -76,6 +83,7 @@ function createChart (song : AudioSource)
 		{
 			chart.WriteLine("0001");
 			Instantiate(note4_object, transform.position + Vector3(3,2.5,0), Quaternion.Euler(0,0,0));
+			blueNotes += 1;
 	 		flag4 = song.time;
 	 		yield WaitForSecondsRealtime(timing);
 		}
@@ -110,11 +118,15 @@ function OnGUI()
 	// Display error message and confirm box if chart file exists already.
     if (error){
     	GUI.Box(new Rect(140,150,500,25), "Error, chart file already exists. Please move/rename/delete it before creating another.");
-        if (GUI.Button (Rect(280,200,200,50), "Ok") )
+        if (GUI.Button (Rect(3280,200,200,50), "Ok") )
         {
            SceneManagement.SceneManager.LoadScene("MainMenu");
         }
     }
 
-    GUI.Label(new Rect(140,40,500,25), "Time : " + Mathf.Round(song.time) + " Sec /  " + totalTime + " Sec ");
+    GUI.Label(new Rect(340,35,500,25), "Time : " + Mathf.Round(song.time) + " Sec /  " + totalTime + " Sec ");
+    GUI.Label(new Rect(340,50,500,25), "Green Notes : " + greenNotes);
+    GUI.Label(new Rect(340,65,500,25), "Red Notes : " + redNotes);
+    GUI.Label(new Rect(340,80,500,25), "Yellow Notes : " + yellowNotes);
+    GUI.Label(new Rect(340,95,500,25), "Blue Notes : " + blueNotes);
 }
