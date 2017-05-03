@@ -63,6 +63,7 @@
      <Compile Include="Assets\Song_Select.cs" />
      <Compile Include="Assets\colorShifter.cs" />
      <None Include="Assets\Music\whilemyguitargentlyweeps.txt" />
+     <None Include="Assets\Music\midnightstroll.txt" />
      <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
      <None Include="Assets\Music\redlikeroses.txt" />
      <None Include="Assets\UI Sampler\Textures and Sprites\SF UI\Background\LICENSE.txt" />
