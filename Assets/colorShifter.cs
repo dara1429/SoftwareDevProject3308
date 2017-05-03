@@ -5,12 +5,13 @@ using UnityEngine;
 public class colorShifter : MonoBehaviour
 {
 
-    private Color colOne = Color.yellow;//yellow   
-    private Color colTwo = Color.blue;//blue
-    private float dura = 2.0F;//time between shifting intervals
-    SpriteRenderer image;//used to grab the blot image
+    //shifts between 2 colors on an image
+	private Color colOne = Color.yellow;   
+    private Color colTwo = Color.blue;
+    private float dura = 2.0F;
+    SpriteRenderer image;
 
-    void Start()//gets the camera component to apply changes on
+    void Start()
     {
         image = GetComponent<SpriteRenderer>();
     }
