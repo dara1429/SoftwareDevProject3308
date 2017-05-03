@@ -81,7 +81,7 @@ function createChart (song : AudioSource)
 		}
 		else
 		{
-				chart.WriteLine("0000");
+				if (Time.timeScale == 1) { chart.WriteLine("0000"); }
 				yield WaitForSecondsRealtime(timing);
 		}
 	}
