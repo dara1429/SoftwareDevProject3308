@@ -24,7 +24,7 @@ function playChart()
     var note2 = "0100";
     var note3 = "0010";
     var note4 = "0001";
-    var chart = new File.OpenText("Assets/Music/Iammurloc.txt");
+    var chart = new File.OpenText("Assets/Music/example.txt");
     var line = "";
     line = chart.ReadLine();
     while (line != null)
