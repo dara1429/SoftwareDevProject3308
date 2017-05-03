@@ -47,15 +47,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Button.js" />
+     <Compile Include="Assets\Combo.js" />
      <Compile Include="Assets\Create_Chart.js" />
      <Compile Include="Assets\IsPressed.js" />
-     <Compile Include="Assets\Last Scene.js" />
+     <Compile Include="Assets\Last_Scene.js" />
      <Compile Include="Assets\Music\breakfast.js" />
      <Compile Include="Assets\Music\customsong.js" />
      <Compile Include="Assets\Music\example.js" />
      <Compile Include="Assets\Music\old_example.js" />
      <Compile Include="Assets\Note.js" />
      <Compile Include="Assets\Pause Menu.js" />
+     <Compile Include="Assets\Replay_Song.js" />
      <Compile Include="Assets\Results.js" />
      <Compile Include="Assets\Score.js" />
      <Compile Include="Assets\Stats.js" />

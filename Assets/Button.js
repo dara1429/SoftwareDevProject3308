@@ -36,10 +36,12 @@ function Update () {
 			Destroy(gameObject);
 			currentScore.AddScore();
 			Stats.notesHit = Stats.notesHit + 1;
+			Combo.combo = Combo.combo + 1;
 	    }
 	    else 
 	    {
 	        currentScore.SubtractScore();
+	        Combo.combo = 0;
 	    }
 	}
 	}
@@ -52,10 +54,13 @@ function Update () {
 			Destroy(gameObject);
 			currentScore.AddScore();
 			Stats.notesHit = Stats.notesHit + 1;
+			Combo.combo = Combo.combo + 1;
+
 	    }
 	    else 
 	    {
 	        currentScore.SubtractScore();
+	        Combo.combo = 0;
 	    }
 	}
 	}	
@@ -68,10 +73,13 @@ function Update () {
 			Destroy(gameObject);
 			currentScore.AddScore();
 			Stats.notesHit = Stats.notesHit + 1;
+			Combo.combo = Combo.combo + 1;
+
 	    }
 	    else 
 	    {
 	        currentScore.SubtractScore();
+	        Combo.combo = 0;
 	    }
 	}
 	}	
@@ -84,10 +92,13 @@ function Update () {
 			Destroy(gameObject);
 			currentScore.AddScore();
 			Stats.notesHit = Stats.notesHit + 1;
+			Combo.combo = Combo.combo + 1;
+
 	    }
 	    else 
 	    {
 	        currentScore.SubtractScore();
+	        Combo.combo = 0;
 	    }
 	}
 	}

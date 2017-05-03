@@ -12,5 +12,6 @@ function Update () {
     if (!GetComponent.<Renderer>().isVisible)
     {
         Destroy(gameObject);
+        Combo.combo = 0;
     }
 }

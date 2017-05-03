@@ -49,7 +49,6 @@ function playChart()
     	  Instantiate(note4_object, transform.position + Vector3(1.5,4.50,0), Quaternion.Euler(0,0,0));
     	  Stats.totalNotes = Stats.totalNotes + 1;
     	}
-    	//yield WaitForSecondsRealtime(noteDelay);
     	yield WaitForSeconds(noteDelay);
     	line = chart.ReadLine();
     }

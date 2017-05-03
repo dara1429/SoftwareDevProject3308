@@ -4,6 +4,7 @@ import UnityEngine.UI;
 var gui_NotesHit : UI.Text;
 var gui_NotesMissed : UI.Text;
 var gui_Percentage : UI.Text;
+var gui_LargestCombo : UI.Text;
 var gui_Grade : GameObject;
 public var sprender : Renderer;
 
@@ -13,6 +14,7 @@ function Start () {
 	var total : float = Stats.totalNotes;
 	var hits : float = Stats.notesHit;
 	var misses : float = Stats.totalNotes - Stats.notesHit;
+	var largestCombo : int = Combo.largestCombo;
 	var percentage : int = 0;
 	if (total != 0) 
 	{
@@ -53,6 +55,7 @@ function Start () {
 
 	gui_NotesHit.text = hits.ToString();
 	gui_NotesMissed.text = misses.ToString();
+	gui_LargestCombo.text = largestCombo.ToString();
 	gui_Percentage.text = percentage.ToString() + " % ";
 }
 

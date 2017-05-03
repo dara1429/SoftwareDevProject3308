@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Music\breakfast.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Last_Scene.js">
     <Files>
-      <File FileName="Assets\Music\breakfast.js" Line="1" Column="1" />
+      <File FileName="Assets\Last_Scene.js" Line="6" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
