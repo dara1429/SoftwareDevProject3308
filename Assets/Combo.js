@@ -11,14 +11,7 @@ function Start () {
 
 function Update () {
 
-	if(combo >= 3) 
-	{
-		comboText.text = "Combo : " + combo;
-	}
-	else
-	{
-		comboText.text = "";
-	}
+	comboText.text = "";
 
 	if(combo > largestCombo)
 	{

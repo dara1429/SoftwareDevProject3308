@@ -26,7 +26,7 @@ function SubtractScore()
 {
 	if (score != 0)
     {
-        score -=100;
+        //score -=100;
         UpdateScore();
     }
 
